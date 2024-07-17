@@ -1,6 +1,6 @@
 public class Professor {
 
-        private String senha;
+    private String senha;
     public Professor(String senha) {
         this.senha = senha;
     }
