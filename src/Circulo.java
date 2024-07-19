@@ -1,27 +1,27 @@
 public class Circulo extends Formas{
 
     private double raio;
-    private double diametro = raio * 2;
+    private double diametro;
 
-    public Circulo(double raio, double diametro) {
+    public Circulo(double raio) {
         this.raio = raio;
-        this.diametro = diametro;
+        this.calcularDiametro();
         this.calcularArea();
         this.calcularPerimetro();
     }
 
     @Override
     void calcularArea() {
-        super.setArea( 3.14 * (raio*2));
+        super.setArea( 3.14 * (this.raio*this.raio));
     }
 
     @Override
     void calcularPerimetro() {
-        super.setPerimetro( this.raio * this.diametro);
+        super.setPerimetro( 3.14 * this.diametro);
     }
 
-    public Circulo(double raio) {
-        this.raio = raio;
+    void calcularDiametro(){
+        diametro = raio * 2;
     }
 
     public double getRaio() {
@@ -32,20 +32,11 @@ public class Circulo extends Formas{
         this.raio = raio;
     }
 
-    public double getDiametro() {
-        return diametro;
-    }
-
-    public void setDiametro(double diametro) {
-        this.diametro = diametro;
-    }
-
     @Override
     public String toString() {
-        return "Circulo{" +
-                "raio=" + raio +
-                ", diametro=" + diametro +
-                ", area Circulo:" + super.getArea() +
-                '}';
+        return "raio: " + this.raio +
+                "\n diametro: " + this.diametro +
+                "\n area Circulo: " + super.getArea() +
+                "\n perimetro Circulo: "+ super.getPerimetro();
     }
 }

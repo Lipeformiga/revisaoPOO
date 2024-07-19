@@ -28,9 +28,8 @@ public class Quadrado extends Formas{
 
     @Override
     public String toString() {
-        return "Quadrado{" +
-                "ladoQuadrado=" + ladoQuadrado +
-                "area quadrado: "+ super.getArea()+
-                '}';
+        return "Lado Quadrado: " + this.ladoQuadrado +
+                "\n area quadrado: "+ super.getArea()+
+                "\n perimetro quadrado: "+ super.getPerimetro();
     }
 }

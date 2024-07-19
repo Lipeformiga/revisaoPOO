@@ -38,10 +38,9 @@ public class Retangulo extends Formas{
 
     @Override
     public String toString() {
-        return "Retangulo{" +
-                "ladoRetangulo1=" + ladoRetangulo1 +
-                ", ladoRetangulo2=" + ladoRetangulo2 +
-                ", area retangulo: "+ super.getArea() +
-                '}';
+        return " 1° lado Retangulo: " + this.ladoRetangulo1 +
+                "\n 2° lado Retangulo: " + this.ladoRetangulo2 +
+                "\n area retangulo: "+ super.getArea() +
+                "\n perimetro retangulo: "+ super.getPerimetro();
     }
 }

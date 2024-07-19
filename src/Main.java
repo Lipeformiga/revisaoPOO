@@ -58,9 +58,7 @@ public class Main {
                 case 7:
                     for (Formas forma : Banco.getFormas()){
                             System.out.println(forma.toString());
-
                     }
-
             }
         }
 
@@ -71,6 +69,7 @@ public class Main {
         Circulo c1 = new Circulo(sc.nextDouble());
         Banco.addForma(c1);
     }
+
     static void cadastroQuadrado(){
 
         System.out.println("lado do quadrado: ");
